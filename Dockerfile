@@ -14,8 +14,7 @@ RUN \
   cd /tmp && \
   wget https://ghost.org/zip/ghost-0.5.3.zip && \
   unzip ghost-0.5.3.zip -d /ghost && \
-  rm -f ghost-0.5.3.zip
-  && \
+  rm -f ghost-0.5.3.zip  && \
   cd /ghost && \
   npm install --production && \
   sed 's/127.0.0.1/0.0.0.0/' /ghost/config.example.js > /ghost/config.js && \
